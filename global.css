@@ -7,15 +7,6 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  /* background-color: var(--primary-color); */
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  font-size: var(--font-text);
-  line-height: 1.4;
-  min-height: 100%;
-}
 /* Reset styles  start*/
 h1,
 h2,
@@ -32,36 +23,15 @@ ol {
   font-weight: normal;
 }
 
-ol, ul {
+ol,
+ul {
   margin: 0;
   padding-left: 0;
   list-style-type: none;
 }
 
 a {
-  color: var(--primary-fontColor);
   text-decoration: none;
-  font-size: var(--bodytext-size);
-}
-
-h1 {
-  font-size: var(--h1-size);
-}
-
-h2 {
-  font-size: var(--h2-size);
-}
-
-h3, h4, h5, h6 {
-  font-size: var(--h3-size);
-}
-
-p {
-  font-size: var(--bodytext-size);
-}
-
-li {
-  font-size: var(--bodytext-size);
 }
 
 button {
@@ -77,4 +47,108 @@ button {
   cursor: pointer;
   text-align: center;
 }
-/* Reset styles END */
+
+/* Main Styles */
+body {
+  /* background-color: var(--primary-color); */
+  margin: 0;
+  font-size: var(--font-text);
+  line-height: 1.4;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  /* flex: 1 0 auto; */
+}
+
+.footer {
+  margin-top: auto;
+  background-color: tomato;
+}
+
+.footer-col1,
+.footer-col2 {
+  margin: 1rem;
+  width: 50%;
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--h3-size);
+}
+
+p {
+  font-size: var(--bodytext-size);
+}
+
+li {
+  font-size: var(--bodytext-size);
+}
+
+a {
+  color: var(--primary-fontColor);
+  font-size: var(--bodytext-size);
+}
+
+/* ==== Nav start ==== */
+.header {
+  background-color: var(--complement-color);
+  position: sticky;
+  top: 0;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  margin: 0 10px;
+}
+
+.main-nav li {
+  display: inline;
+}
+
+#mob-menu button {
+  padding: 10px;
+  margin: -10px;
+  background-color: transparent;
+}
+
+.menu-col1,
+.menu-col2 {
+  display: none;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Media queries */
+@media (min-width: 760px) {
+  #mob-menu {
+    display: none;
+  }
+
+  .menu-col1,
+  .menu-col2 {
+    display: initial;
+  }
+}
