@@ -1,3 +1,40 @@
 body {
     display: flex;
 }
+
+.header {
+    background-color: var(--complement-color);
+    /* position: relative; */
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    margin: 0 10px;
+}
+
+.main-nav li {
+    display: inline;
+}
+
+#mob-menu button {
+    padding: 10px;
+    margin: -10px;
+    background-color: transparent;
+}
+
+.menu-col1, .menu-col2 {
+    display: none;
+}
+
+@media (min-width: 760px) {
+    #mob-menu {
+        display: none;
+    }
+
+    .menu-col1, .menu-col2 {
+        display: initial;
+    }
+}
