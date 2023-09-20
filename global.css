@@ -34,6 +34,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 button {
   display: inline-block;
   border: none;
@@ -60,17 +64,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-.footer {
-  margin-top: auto;
-  background-color: tomato;
-}
-
-.footer-col1,
-.footer-col2 {
-  margin: 1rem;
-  width: 50%;
 }
 
 h1 {
@@ -113,16 +106,21 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 8rem;
-  margin: 0 10px;
+  margin: 0 1rem;
 }
 
 .main-nav li {
   display: inline;
 }
 
+.main-nav li a {
+  padding: 1rem;
+  margin: -1rem;
+}
+
 #mob-menu button {
-  padding: 10px;
-  margin: -10px;
+  padding: 1rem;
+  margin: -1rem;
   background-color: transparent;
 }
 
@@ -131,10 +129,27 @@ a {
   display: none;
 }
 
+.menu-col1 li {
+  margin-right: 2rem;
+}
+
+.menu-col2 li {
+  margin-left: 2rem;
+}
+
 /* FOOTER */
-footer {
+
+.footer {
   display: flex;
   justify-content: space-between;
+  margin-top: auto;
+  background-color: tomato;
+}
+
+.footer-col1,
+.footer-col2 {
+  margin: 1rem;
+  width: 50%;
 }
 
 /* Media queries */
